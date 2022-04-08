@@ -2,7 +2,7 @@
 
 ![GitHub](https://img.shields.io/github/license/aissa-laribi/cmagick)
 
-Cmagigk is a <a href="https://docs.python.org/3.8/library/subprocess.html">subprocess-based</a> simple <a href ="https://www.imagemagick.org/"><ImageMagick/a> interaction for Python, supporting Python 3.8+ and Linux distributions. The functionalities of ImageMagick to convert to the following formats (bmp,eps,gif,tiff,webp,wbmp,tga,png,jpg,jpeg,hdr,exr), and resize pictures are implemented in cmagick.
+Cmagigk is a <a href="https://docs.python.org/3.8/library/subprocess.html">subprocess-based</a> simple <a href ="https://www.imagemagick.org/">ImageMagick</a> interaction for Python, supporting Python 3.8+ and Linux distributions. The functionalities of ImageMagick to convert to the following formats (bmp,eps,gif,tiff,webp,wbmp,tga,png,jpg,jpeg,hdr,exr), and resize pictures are implemented in cmagick.
 
 ## Usage
 
