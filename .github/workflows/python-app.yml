@@ -29,6 +29,7 @@ jobs:
         wget https://github.com/aissa-laribi/cmagick/blob/main/src/cmagick/blue-marble.jpg
         sudo apt-get update -y
         sudo apt-get install -y imagemagick
+        convert -list format
         python -m pip install --upgrade pip
         pip install flake8 pytest
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
