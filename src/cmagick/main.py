@@ -1,11 +1,7 @@
 def main():
-    
     from cmagick import convert, resize
-
-    sourcefile = sourcefile
-    destinationfile = destinationfile
-    size = size
+    sourcefile = input()
+    destinationfile = input()
+    size = input()
     convert = convert.convert(sourcefile, destinationfile)
-    resize = resize.convert(sourcefile,size, destinationfile)
-    
-
+    resize = resize.convert(sourcefile, size, destinationfile)
