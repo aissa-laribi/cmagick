@@ -27,12 +27,13 @@ ImageMagick for yum RPM
 
 ## Installation 
 
-You can install the package from Github by using pip:
+You can install the package the GitHub repository:
 ```
-$ pip install https://github.com/aissa-laribi/cmagick/dist/cmagick-0.0.5-py3-none-any.whl
-```
-Or check source code from the GitHub repository:
-
 $ git clone git://github.com/aissa-laribi/cmagick.git
 $ cd cmagick/
-$ python3 setup.py install
+$ python3 setup.py install --user
+```
+## To Uninstall
+```
+$ pip uninstall cmagick
+```
