@@ -34,3 +34,18 @@ def test_resize():
          '-resize', '128x128', 'blue-marble.jpg'],
         stdout=subprocess.PIPE)
     assert completed_process.returncode == 0
+
+
+def list_formats():
+    try:
+        return subprocess.run(
+            ['convert', '-list', 'format'], stdout=subprocess.PIPE)
+    except OSError as err:
+        print(f"Error: {err}")
+        sys.exit(1)
+
+
+def test_list_formats():
+    completed_process = subprocess.run(
+            ['convert', '-list', 'format'], stdout=subprocess.PIPE)
+    assert completed_process.returncode == 0

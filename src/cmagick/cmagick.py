@@ -19,3 +19,12 @@ def resize(sourcefile, size, destinationfile):
     except OSError as err:
         print(f"Error: {err}")
         sys.exit(1)
+
+
+def list_formats():
+    try:
+        return subprocess.run(
+            ['convert', '-list', 'format'], stdout=subprocess.PIPE)
+    except OSError as err:
+        print(f"Error: {err}")
+        sys.exit(1)
