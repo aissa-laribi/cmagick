@@ -26,7 +26,6 @@ jobs:
     - name: Install dependencies
       run: |
         pwd
-        wget https://github.com/aissa-laribi/cmagick/blob/main/src/cmagick/mountain.jpg
         sudo apt-get update -y
         sudo apt-get install -y imagemagick
         convert -list format
