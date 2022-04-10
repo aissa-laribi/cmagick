@@ -13,7 +13,7 @@ def convert(sourcefile, destinationfile):
 
 def test_convert():
     completed_process = subprocess.run(
-        ['convert', 'mountain.jpg', 'blue-marble.webp'],
+        ['convert', 'blue-marble.jpg', 'blue-marble.webp'],
         stdout=subprocess.PIPE)
     assert completed_process.returncode == 0
 
@@ -30,7 +30,7 @@ def resize(sourcefile, size, destinationfile):
 
 def test_resize():
     completed_process = subprocess.run(
-        ['convert', 'mountain.jpg',
-         '-resize', '128x128', 'mountain.jpg'],
+        ['convert', 'blue-marble.jpg',
+         '-resize', '128x128', 'blue-marble.jpg'],
         stdout=subprocess.PIPE)
     assert completed_process.returncode == 0
