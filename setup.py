@@ -5,9 +5,10 @@ long_description = (this_directory / "README.md").read_text()
 
 setup(
     name='cmagick',
-    version='0.1.3',
+    version='0.1.5',
     long_description=long_description,
     long_description_content_type='text/markdown',
+    license='MIT',
     author='Aissa Laribi',
     author_email='aissalaribi@yahoo.fr',
     description='An utility for converting and resizing images',
