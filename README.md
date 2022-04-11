@@ -9,6 +9,7 @@ Cmagick is a <a href="https://docs.python.org/3.8/library/subprocess.html">subpr
 The functionalities of ImageMagick implemented in cmagick are:
 
 -Converting images to the following formats (bmp,eps,gif,tiff,webp,wbmp,tga,png,jpg,jpeg,hdr,exr)
+
 -Resizing pictures
 
 ## Usage
