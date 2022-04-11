@@ -1,13 +1,16 @@
 from setuptools import setup, find_packages
+from pathlib import Path
+this_directory = Path(__file__).parent
+long_description = (this_directory / "README.md").read_text()
 
 setup(
     name='cmagick',
-    version='0.1.0',
+    version='0.1.3',
+    long_description=long_description,
+    long_description_content_type='text/markdown',
     author='Aissa Laribi',
     author_email='aissalaribi@yahoo.fr',
     description='An utility for converting and resizing images',
-    long_description='README.md',
-    long_description_content_type='text/x-rst',
     url='https://github.com/aissa-laribi/cmagick',
     packages=find_packages('src'),
     package_dir={'': 'src'},
