@@ -20,19 +20,21 @@ To convert images
 ```
 from cmagick import cmagick
 
-convert('website.jpg','website.webp')
+cmagick.convert('website.jpg', 'website.webp')
+
 ```
 To resize images
 ```
 from cmagick import cmagick
 
-resize('website.jpg','100x100','website.jpg')
+cmagick.resize('website.jpg','100x100','website.jpg')
+
 ```
 To check the current formats available
 ```
 from cmagick import cmagick
 
-print(list_formats())
+print(cmagick.list_formats())
 ```
 
 ## Prerequisites
