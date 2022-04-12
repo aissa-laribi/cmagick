@@ -10,7 +10,9 @@ The functionalities of ImageMagick implemented in cmagick are:
 
 -Converting images to the following formats (bmp,eps,gif,tiff,webp,wbmp,tga,png,jpg,jpeg,hdr,exr)
 
--Resizing pictures
+-Resizing pictures with a declarative size
+
+-Support path arguments
 
 ## Usage
 
