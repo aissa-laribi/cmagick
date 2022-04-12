@@ -30,6 +30,13 @@ from cmagick import cmagick
 cmagick.resize('website.jpg','100x100','website.jpg')
 
 ```
+To convert and save in a defined directory
+```
+from cmagick import cmagick
+
+cmagick.convert('website.jpg', '/Desktop/newname.webp')
+```
+
 To check the current formats available
 ```
 from cmagick import cmagick
