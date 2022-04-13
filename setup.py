@@ -5,7 +5,7 @@ long_description = (this_directory / "README.md").read_text()
 
 setup(
     name='cmagick',
-    version='0.1.2',
+    version='0.1.3',
     long_description=long_description,
     long_description_content_type='text/markdown',
     license='MIT',
