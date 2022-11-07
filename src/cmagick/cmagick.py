@@ -3,28 +3,17 @@ import subprocess
 
 
 def convert(sourcefile, destinationfile):
-    try:
-        return subprocess.run(
-            ['convert', sourcefile, destinationfile], stdout=subprocess.PIPE)
-    except OSError as err:
-        print(f"Error: {err}")
-        sys.exit(1)
-
+    return subprocess.run(
+        ['convert', sourcefile, destinationfile], stdout=subprocess.PIPE)
 
 def resize(sourcefile, size, destinationfile):
-    try:
-        return subprocess.run(
-            ['convert', sourcefile, '-resize', size, '*', destinationfile],
-            stdout=subprocess.PIPE)
-    except OSError as err:
-        print(f"Error: {err}")
-        sys.exit(1)
+    return subprocess.run(
+        ['convert', sourcefile, '-resize', size, '*', destinationfile], stdout=subprocess.PIPE)
 
 
 def list_formats():
-    try:
-        return subprocess.run(
-            ['convert', '-list', 'format'], stdout=subprocess.PIPE)
-    except OSError as err:
-        print(f"Error: {err}")
-        sys.exit(1)
+    return subprocess.run(
+        ['convert', '-list', 'format'], stdout=subprocess.PIPE)
+
+
+    
