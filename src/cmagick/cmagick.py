@@ -8,7 +8,7 @@ def convert(sourcefile, destinationfile):
 
 def resize(sourcefile, size, destinationfile):
     return subprocess.run(
-        ['convert', sourcefile, '-resize', size, '*', destinationfile], stdout=subprocess.PIPE)
+        ['convert', sourcefile, '-resize', size, destinationfile], stdout=subprocess.PIPE)
 
 
 def list_formats():
