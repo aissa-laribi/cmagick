@@ -48,7 +48,7 @@ print(cmagick.list_formats())
 
 ## Prerequisites
 
-Python 3.6+
+Python 3.8+
 
 imagemagick for apt Debian/Ubuntu
 ImageMagick for yum RPM
