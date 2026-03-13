@@ -22,15 +22,15 @@ jobs:
         python-version: [ '3.6', '3.7', '3.8', '3.9', '3.10' ]
 
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
     - name: Set up Python ${{ matrix.python-version }}
-      uses: actions/setup-python@v3
+      uses: actions/setup-python@v5
       with:
         python-version: ${{ matrix.python-version }}
     - name: Install dependencies
       run: |
         pwd
-        wget https://github.com/aissa-laribi/cmagick/blob/main/blue-marble.jpg
+        wget https://raw.githubusercontent.com/aissa-laribi/cmagick/main/blue-marble.jpg
         sudo apt-get update -y
         sudo apt-get install -y imagemagick
         convert -list format
@@ -50,4 +50,4 @@ jobs:
       run: |
         coverage report -m
     - name: Upload Coverage to Codecov
-      uses: codecov/codecov-action@v2
+      uses: codecov/codecov-action@v4
