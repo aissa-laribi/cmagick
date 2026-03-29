@@ -6,3 +6,4 @@ def main():
     convert = convert.convert(sourcefile, destinationfile)
     resize = resize.convert(sourcefile, size, destinationfile)
     list_formats()
+
